@@ -1,0 +1,34 @@
+[0.615s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_1': PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_1 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build install --record /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/install.log --single-version-externally-managed install_data
+[0.834s] running egg_info
+[0.836s] creating ../build/task_1/task_1.egg-info
+[0.836s] writing ../build/task_1/task_1.egg-info/PKG-INFO
+[0.836s] writing dependency_links to ../build/task_1/task_1.egg-info/dependency_links.txt
+[0.836s] writing entry points to ../build/task_1/task_1.egg-info/entry_points.txt
+[0.836s] writing requirements to ../build/task_1/task_1.egg-info/requires.txt
+[0.836s] writing top-level names to ../build/task_1/task_1.egg-info/top_level.txt
+[0.836s] writing manifest file '../build/task_1/task_1.egg-info/SOURCES.txt'
+[0.838s] reading manifest file '../build/task_1/task_1.egg-info/SOURCES.txt'
+[0.838s] adding license file 'LICENSE'
+[0.838s] writing manifest file '../build/task_1/task_1.egg-info/SOURCES.txt'
+[0.838s] running build
+[0.838s] running build_py
+[0.838s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build
+[0.838s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib
+[0.838s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib/task_1
+[0.838s] copying task_1/__init__.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib/task_1
+[0.838s] running install
+[0.838s] running install_lib
+[0.840s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1
+[0.840s] copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib/task_1/__init__.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1
+[0.840s] byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1/__init__.py to __init__.cpython-310.pyc
+[0.840s] running install_data
+[0.840s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/ament_index
+[0.840s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/ament_index/resource_index
+[0.840s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/ament_index/resource_index/packages
+[0.840s] copying resource/task_1 -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/ament_index/resource_index/packages
+[0.840s] copying package.xml -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/task_1
+[0.840s] running install_egg_info
+[0.842s] Copying ../build/task_1/task_1.egg-info to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1-0.0.0-py3.10.egg-info
+[0.843s] running install_scripts
+[0.862s] writing list of installed files to '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/install.log'
+[0.881s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_1' returned '0': PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_1 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build install --record /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/install.log --single-version-externally-managed install_data
