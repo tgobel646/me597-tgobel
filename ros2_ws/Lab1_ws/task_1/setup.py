@@ -13,9 +13,9 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='me597',
-    maintainer_email='me597@todo.todo',
-    description='TODO: Package description',
+    maintainer='Talon Gobel',
+    maintainer_email='talon.gobel@gmail.com',
+    description='Task 1 package',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={

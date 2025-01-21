@@ -3,8 +3,8 @@
 <package format="3">
   <name>task_1</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="me597@todo.todo">me597</maintainer>
+  <description>Task 1 package</description>
+  <maintainer email="talon.gobel@gmail.com">Talon Gobel</maintainer>
   <license>Apache-2.0</license>
 
   <test_depend>ament_copyright</test_depend>
