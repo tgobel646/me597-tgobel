@@ -1,3 +1,4 @@
 [console_scripts]
-
+listener = task_1.my_first_subscriber:main
+talker = task_1.my_first_topic:main
 
