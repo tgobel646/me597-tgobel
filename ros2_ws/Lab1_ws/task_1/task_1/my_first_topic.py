@@ -1,24 +1,24 @@
 import rclpy
 from rclpy.node import Node
-
 from std_msgs.msg import Float64
+import time
 
 
 class MinimalPublisher(Node):
 
     def __init__(self):
-        super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(Float64, 'topic', 10)
-        timer_period = 0.1  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        super().__init__('time_publisher')
+        self.publisher_ = self.create_publisher(Float64, 'my_first_topic', 10)
+        self.start_time = time.time() 
+        self.timer = self.create_timer(1.0, self.timer_callback)
         self.i = 0
 
     def timer_callback(self):
+        my_first_topic = time.time() - self.start_time
+        self.get_logger().info(f'Elapsed time: {my_first_topic} seconds')
         msg = Float64()
-        msg.data = self.i
+        msg.data = my_first_topic
         self.publisher_.publish(msg)
-        self.get_logger().info(msg)
-        self.i += 0.1
 
 
 def main(args=None):

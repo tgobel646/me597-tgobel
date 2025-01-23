@@ -9,8 +9,11 @@ setup.py
 ../build/task_1/task_1.egg-info/requires.txt
 ../build/task_1/task_1.egg-info/top_level.txt
 ../build/task_1/task_1.egg-info/zip-safe
+launch/pub_sub_launch.py
 resource/task_1
 task_1/__init__.py
+task_1/my_first_subscriber.py
+task_1/my_first_topic.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
