@@ -1,0 +1,48 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (task_1) JobQueued: {'identifier': 'task_1', 'dependencies': OrderedDict()}
+[0.000304] (task_1) JobStarted: {'identifier': 'task_1'}
+[0.099452] (-) TimerEvent: {}
+[0.200618] (-) TimerEvent: {}
+[0.301715] (-) TimerEvent: {}
+[0.403081] (-) TimerEvent: {}
+[0.504810] (-) TimerEvent: {}
+[0.606894] (-) TimerEvent: {}
+[0.708253] (-) TimerEvent: {}
+[0.801799] (task_1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/task_1', 'build', '--build-base', '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build', 'install', '--record', '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'me597', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/me597', 'OLDPWD': '/home/me597/me597-tgobel/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1623', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'me597', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'me597', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/1586,unix/me597:/tmp/.ICE-unix/1586', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c50e373d_3633_4077_aa48_b5e6c3fd2c6a', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.875402', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.200', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '12', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.808569] (-) TimerEvent: {}
+[0.910647] (-) TimerEvent: {}
+[1.013577] (-) TimerEvent: {}
+[1.114010] (-) TimerEvent: {}
+[1.130787] (task_1) StdoutLine: {'line': b'running egg_info\n'}
+[1.131375] (task_1) StdoutLine: {'line': b'writing ../build/task_1/task_1.egg-info/PKG-INFO\n'}
+[1.131728] (task_1) StdoutLine: {'line': b'writing dependency_links to ../build/task_1/task_1.egg-info/dependency_links.txt\n'}
+[1.132074] (task_1) StdoutLine: {'line': b'writing entry points to ../build/task_1/task_1.egg-info/entry_points.txt\n'}
+[1.132218] (task_1) StdoutLine: {'line': b'writing requirements to ../build/task_1/task_1.egg-info/requires.txt\n'}
+[1.132312] (task_1) StdoutLine: {'line': b'writing top-level names to ../build/task_1/task_1.egg-info/top_level.txt\n'}
+[1.136414] (task_1) StdoutLine: {'line': b"reading manifest file '../build/task_1/task_1.egg-info/SOURCES.txt'\n"}
+[1.136632] (task_1) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.136805] (task_1) StdoutLine: {'line': b"writing manifest file '../build/task_1/task_1.egg-info/SOURCES.txt'\n"}
+[1.137070] (task_1) StdoutLine: {'line': b'running build\n'}
+[1.137162] (task_1) StdoutLine: {'line': b'running build_py\n'}
+[1.137676] (task_1) StdoutLine: {'line': b'copying task_1/my_first_topic.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib/task_1\n'}
+[1.137894] (task_1) StdoutLine: {'line': b'copying task_1/my_first_subscriber.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib/task_1\n'}
+[1.137983] (task_1) StdoutLine: {'line': b'running install\n'}
+[1.138256] (task_1) StdoutLine: {'line': b'running install_lib\n'}
+[1.140672] (task_1) StdoutLine: {'line': b'copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib/task_1/my_first_topic.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1\n'}
+[1.140885] (task_1) StdoutLine: {'line': b'copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/build/lib/task_1/my_first_subscriber.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1\n'}
+[1.141077] (task_1) StdoutLine: {'line': b'byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1/my_first_topic.py to my_first_topic.cpython-310.pyc\n'}
+[1.141207] (task_1) StdoutLine: {'line': b'byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1/my_first_subscriber.py to my_first_subscriber.cpython-310.pyc\n'}
+[1.141514] (task_1) StdoutLine: {'line': b'running install_data\n'}
+[1.141645] (task_1) StdoutLine: {'line': b'copying package.xml -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/task_1\n'}
+[1.141988] (task_1) StdoutLine: {'line': b'copying launch/pub_sub_launch.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/task_1/launch\n'}
+[1.142114] (task_1) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.146003] (task_1) StdoutLine: {'line': b"removing '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.146283] (task_1) StdoutLine: {'line': b'Copying ../build/task_1/task_1.egg-info to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/python3.10/site-packages/task_1-0.0.0-py3.10.egg-info\n'}
+[1.146384] (task_1) StdoutLine: {'line': b'running install_scripts\n'}
+[1.173211] (task_1) StdoutLine: {'line': b'Installing listener script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/task_1\n'}
+[1.173916] (task_1) StdoutLine: {'line': b'Installing talker script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/lib/task_1\n'}
+[1.174597] (task_1) StdoutLine: {'line': b"writing list of installed files to '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1/install.log'\n"}
+[1.198516] (task_1) CommandEnded: {'returncode': 0}
+[1.213822] (task_1) JobEnded: {'identifier': 'task_1', 'rc': 0}
+[1.214666] (-) TimerEvent: {}
+[1.214887] (-) EventReactorShutdown: {}

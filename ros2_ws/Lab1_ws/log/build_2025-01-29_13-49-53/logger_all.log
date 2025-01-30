@@ -1,0 +1,191 @@
+[0.134s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.135s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=5, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x76d80c86d270>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x76d80c975990>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x76d80c975990>>, mixin_verb=('build',))
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.327s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'ros'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extensions ['cmake', 'python']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'cmake'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'python'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extensions ['python_setup_py']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files) by extension 'python_setup_py'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'colcon_pkg'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extensions ['colcon_meta']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'colcon_meta'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extensions ['ros']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'ros'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extensions ['cmake', 'python']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'cmake'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'python'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extensions ['python_setup_py']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(bag_files/task_1) by extension 'python_setup_py'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(task_1) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'task_1' with type 'ros.ament_python' and name 'task_1'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(task_2) by extension 'ros'
+[0.348s] DEBUG:colcon.colcon_core.package_identification:Package 'task_2' with type 'ros.ament_python' and name 'task_2'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(task_2_interfaces) by extension 'ros'
+[0.350s] DEBUG:colcon.colcon_core.package_identification:Package 'task_2_interfaces' with type 'ros.ament_cmake' and name 'task_2_interfaces'
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.371s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install
+[0.373s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 345 installed packages in /opt/ros/humble
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'task_1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'task_1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1', 'merge_install': False, 'path': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_1', 'symlink_install': False, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'task_2_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'task_2_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces', 'merge_install': False, 'path': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'cmake_target' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'cmake_clean_first' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'cmake_force_configure' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'ament_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'task_2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.445s] DEBUG:colcon.colcon_core.verb:Building package 'task_2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2', 'merge_install': False, 'path': '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2', 'symlink_install': False, 'test_result_base': None}
+[0.446s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.447s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.448s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2_interfaces' with build type 'ament_cmake'
+[0.448s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2_interfaces'
+[0.451s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.455s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_1' with build type 'ament_python'
+[0.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_1', 'ament_prefix_path')
+[0.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/task_1/hook/ament_prefix_path.ps1'
+[0.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/task_1/hook/ament_prefix_path.dsv'
+[0.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1/share/task_1/hook/ament_prefix_path.sh'
+[0.460s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.460s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --build /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces -- -j5 -l5
+[0.948s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_1'
+[0.949s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.949s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --build /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces -- -j5 -l5
+[1.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --install /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces
+[1.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --install /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces
+[1.452s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_2_interfaces)
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces' for CMake module files
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces' for CMake config files
+[1.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_2_interfaces', 'cmake_prefix_path')
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/hook/cmake_prefix_path.ps1'
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/hook/cmake_prefix_path.dsv'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/hook/cmake_prefix_path.sh'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib'
+[1.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_2_interfaces', 'ld_library_path_lib')
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/hook/ld_library_path_lib.ps1'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/hook/ld_library_path_lib.dsv'
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/hook/ld_library_path_lib.sh'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/bin'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib/pkgconfig/task_2_interfaces.pc'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib/python3.10/site-packages'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/bin'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/package.ps1'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/package.dsv'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/package.sh'
+[1.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/package.bash'
+[1.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/package.zsh'
+[1.474s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/colcon-core/packages/task_2_interfaces)
+[1.588s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.588s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.588s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[1.588s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.597s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.597s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.597s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.617s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.617s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/local_setup.ps1'
+[1.620s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/_local_setup_util_ps1.py'
+[1.622s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/setup.ps1'
+[1.624s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/local_setup.sh'
+[1.626s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/_local_setup_util_sh.py'
+[1.627s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/setup.sh'
+[1.629s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/local_setup.bash'
+[1.630s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/setup.bash'
+[1.632s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/local_setup.zsh'
+[1.633s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/setup.zsh'

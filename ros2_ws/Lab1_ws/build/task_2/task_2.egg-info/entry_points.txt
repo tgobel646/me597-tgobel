@@ -1,0 +1,6 @@
+[console_scripts]
+client = task_2.client_function:main
+listener = task_2.joint_topic_subscriber:main
+service = task_2.service_function:main
+talker = task_2.joint_topic_publisher:main
+

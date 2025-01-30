@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2_interfaces/launch": No
+  such file or directory.
+
+[0m

@@ -8,16 +8,15 @@ class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('time_publisher')
-        self.publisher_ = self.create_publisher(Float64, 'elapsed_time', 10)
+        self.publisher_ = self.create_publisher(Float64, 'my_first_topic', 10)
         self.start_time = time.time() 
         self.timer = self.create_timer(1.0, self.timer_callback)
-        self.i = 0
 
     def timer_callback(self):
-        elapsed_time = time.time() - self.start_time
-        self.get_logger().info(f'Elapsed time: {elapsed_time} seconds')
+        my_first_topic = time.time() - self.start_time
+        self.get_logger().info(f'Elapsed time: {my_first_topic} seconds')
         msg = Float64()
-        msg.data = elapsed_time
+        msg.data = my_first_topic
         self.publisher_.publish(msg)
 
 

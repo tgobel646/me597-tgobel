@@ -11,7 +11,6 @@ class MinimalPublisher(Node):
         self.publisher_ = self.create_publisher(Float64, 'my_first_topic', 10)
         self.start_time = time.time() 
         self.timer = self.create_timer(1.0, self.timer_callback)
-        self.i = 0
 
     def timer_callback(self):
         my_first_topic = time.time() - self.start_time

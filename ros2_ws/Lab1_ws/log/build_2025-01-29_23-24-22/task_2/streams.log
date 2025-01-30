@@ -1,0 +1,25 @@
+[0.579s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2': AMENT_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces LD_LIBRARY_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_2 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build install --record /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/install.log --single-version-externally-managed install_data
+[0.796s] running egg_info
+[0.796s] writing ../build/task_2/task_2.egg-info/PKG-INFO
+[0.796s] writing dependency_links to ../build/task_2/task_2.egg-info/dependency_links.txt
+[0.796s] writing entry points to ../build/task_2/task_2.egg-info/entry_points.txt
+[0.797s] writing requirements to ../build/task_2/task_2.egg-info/requires.txt
+[0.798s] writing top-level names to ../build/task_2/task_2.egg-info/top_level.txt
+[0.798s] reading manifest file '../build/task_2/task_2.egg-info/SOURCES.txt'
+[0.799s] adding license file 'LICENSE'
+[0.800s] writing manifest file '../build/task_2/task_2.egg-info/SOURCES.txt'
+[0.800s] running build
+[0.800s] running build_py
+[0.800s] running install
+[0.801s] running install_lib
+[0.803s] running install_data
+[0.803s] running install_egg_info
+[0.805s] removing '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2-0.0.0-py3.10.egg-info' (and everything under it)
+[0.805s] Copying ../build/task_2/task_2.egg-info to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2-0.0.0-py3.10.egg-info
+[0.805s] running install_scripts
+[0.827s] Installing client script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.827s] Installing listener script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.827s] Installing service script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.828s] Installing talker script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.828s] writing list of installed files to '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/install.log'
+[0.852s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2' returned '0': AMENT_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces LD_LIBRARY_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_2 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build install --record /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/install.log --single-version-externally-managed install_data

@@ -10,15 +10,15 @@ class MinimalSubscriber(Node):
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(
             Float64,
-            'elapsed_time',
+            'my_first_subscriber',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        elapsed_time = msg.data
-        doubled_time = elapsed_time * 2
-        self.get_logger().info(f'Elapsed time: {elapsed_time} seconds, this doubled is {doubled_time} seconds.')
+        my_first_topic = msg.data
+        doubled_time = my_first_topic * 2
+        self.get_logger().info(f'Elapsed time: {my_first_topic} seconds, this doubled is {doubled_time} seconds.')
 
 
 def main(args=None):

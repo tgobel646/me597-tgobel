@@ -1,0 +1,33 @@
+[0.029s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --build /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces -- -j5 -l5
+[0.125s] [  2%] Built target task_2_interfaces__cpp
+[0.132s] [ 12%] Built target task_2_interfaces__rosidl_generator_c
+[0.144s] [ 12%] Built target ament_cmake_python_copy_task_2_interfaces
+[0.176s] [ 23%] Built target task_2_interfaces__rosidl_typesupport_introspection_c
+[0.189s] [ 33%] Built target task_2_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.194s] [ 46%] Built target task_2_interfaces__rosidl_typesupport_fastrtps_c
+[0.194s] [ 56%] Built target task_2_interfaces__rosidl_typesupport_introspection_cpp
+[0.196s] [ 64%] Built target task_2_interfaces__rosidl_typesupport_c
+[0.228s] [ 74%] Built target task_2_interfaces__rosidl_typesupport_cpp
+[0.260s] [ 74%] Built target task_2_interfaces
+[0.305s] [ 76%] Built target task_2_interfaces__py
+[0.351s] [ 84%] Built target task_2_interfaces__rosidl_generator_py
+[0.401s] [ 89%] Built target task_2_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.422s] [ 94%] Built target task_2_interfaces__rosidl_typesupport_c__pyext
+[0.424s] [100%] Built target task_2_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.632s] running egg_info
+[0.633s] writing task_2_interfaces.egg-info/PKG-INFO
+[0.634s] writing dependency_links to task_2_interfaces.egg-info/dependency_links.txt
+[0.635s] writing top-level names to task_2_interfaces.egg-info/top_level.txt
+[0.637s] reading manifest file 'task_2_interfaces.egg-info/SOURCES.txt'
+[0.639s] writing manifest file 'task_2_interfaces.egg-info/SOURCES.txt'
+[0.681s] [100%] Built target ament_cmake_python_build_task_2_interfaces_egg
+[0.703s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --build /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces -- -j5 -l5
+[0.852s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --install /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces
+[0.864s] -- Install configuration: ""
+[0.864s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.865s]   file INSTALL cannot find
+[0.865s]   "/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2_interfaces/launch": No
+[0.865s]   such file or directory.
+[0.865s] 
+[0.865s] [0m
+[0.870s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --install /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces

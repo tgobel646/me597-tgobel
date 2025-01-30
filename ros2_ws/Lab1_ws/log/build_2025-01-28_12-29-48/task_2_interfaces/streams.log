@@ -1,0 +1,54 @@
+[0.015s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --build /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces -- -j5 -l5
+[0.036s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.151s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.210s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.230s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.232s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.237s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.257s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.290s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.518s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.888s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.025s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.045s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.064s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.064s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.064s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.101s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.125s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.127s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.213s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.249s] -- Found task_2_interfaces: 0.0.0 (/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/cmake)
+[1.265s] -- Added test 'lint_cmake' to check CMake code style
+[1.268s] -- Added test 'xmllint' to check XML markup files
+[1.269s] -- Configuring done
+[1.274s] [31mCMake Error at CMakeLists.txt:39 (add_executable):
+[1.274s]   Cannot find source file:
+[1.274s] 
+[1.274s]     src/joint_topic_publisher.cpp
+[1.274s] 
+[1.274s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.274s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.274s] 
+[1.274s] [0m
+[1.275s] [31mCMake Error at CMakeLists.txt:42 (add_executable):
+[1.275s]   Cannot find source file:
+[1.275s] 
+[1.275s]     src/joint_topic_subscriber.cpp
+[1.275s] 
+[1.275s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.275s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.275s] 
+[1.275s] [0m
+[1.281s] [31mCMake Error at CMakeLists.txt:39 (add_executable):
+[1.281s]   No SOURCES given to target: talker
+[1.281s] 
+[1.281s] [0m
+[1.281s] [31mCMake Error at CMakeLists.txt:42 (add_executable):
+[1.281s]   No SOURCES given to target: listener
+[1.281s] 
+[1.281s] [0m
+[1.281s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.282s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
+[1.285s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/opt/ros/humble /usr/bin/cmake --build /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces -- -j5 -l5
