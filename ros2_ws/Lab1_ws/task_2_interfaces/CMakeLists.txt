@@ -34,7 +34,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(task_2_interfaces REQUIRED)                      # CHANGE
+# find_package(task_2_interfaces REQUIRED)                      # CHANGE
 
 # add_executable(talker src/joint_topic_publisher.cpp)
 # ament_target_dependencies(talker rclcpp task_2_interfaces)    # CHANGE

@@ -6,9 +6,9 @@ def generate_launch_description():
         Node(
             package='task_1',
             executable='talker',
-            name='talker'),
+            ),
         Node(
             package='task_1',
             executable='listener',
-            name='listener')
+            )
   ])

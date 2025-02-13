@@ -1,0 +1,52 @@
+[0.581s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2': AMENT_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_2 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build install --record /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/install.log --single-version-externally-managed install_data
+[0.808s] running egg_info
+[0.810s] creating ../build/task_2/task_2.egg-info
+[0.810s] writing ../build/task_2/task_2.egg-info/PKG-INFO
+[0.810s] writing dependency_links to ../build/task_2/task_2.egg-info/dependency_links.txt
+[0.810s] writing entry points to ../build/task_2/task_2.egg-info/entry_points.txt
+[0.810s] writing requirements to ../build/task_2/task_2.egg-info/requires.txt
+[0.810s] writing top-level names to ../build/task_2/task_2.egg-info/top_level.txt
+[0.810s] writing manifest file '../build/task_2/task_2.egg-info/SOURCES.txt'
+[0.812s] reading manifest file '../build/task_2/task_2.egg-info/SOURCES.txt'
+[0.812s] adding license file 'LICENSE'
+[0.813s] writing manifest file '../build/task_2/task_2.egg-info/SOURCES.txt'
+[0.813s] running build
+[0.814s] running build_py
+[0.814s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build
+[0.814s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib
+[0.814s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2
+[0.814s] copying task_2/joint_topic_publisher.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2
+[0.814s] copying task_2/client_function.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2
+[0.814s] copying task_2/joint_topic_subscriber.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2
+[0.814s] copying task_2/service_function.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2
+[0.814s] copying task_2/__init__.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2
+[0.814s] running install
+[0.815s] running install_lib
+[0.815s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2
+[0.815s] copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2/joint_topic_publisher.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2
+[0.815s] copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2/client_function.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2
+[0.815s] copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2/joint_topic_subscriber.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2
+[0.815s] copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2/service_function.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2
+[0.815s] copying /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build/lib/task_2/__init__.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2
+[0.815s] byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2/joint_topic_publisher.py to joint_topic_publisher.cpython-310.pyc
+[0.816s] byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2/client_function.py to client_function.cpython-310.pyc
+[0.817s] byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2/joint_topic_subscriber.py to joint_topic_subscriber.cpython-310.pyc
+[0.817s] byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2/service_function.py to service_function.cpython-310.pyc
+[0.817s] byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2/__init__.py to __init__.cpython-310.pyc
+[0.818s] running install_data
+[0.818s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/share/ament_index
+[0.818s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/share/ament_index/resource_index
+[0.818s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/share/ament_index/resource_index/packages
+[0.818s] copying resource/task_2 -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/share/ament_index/resource_index/packages
+[0.818s] copying package.xml -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/share/task_2
+[0.818s] creating /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/share/task_2/launch
+[0.818s] copying launch/service_launch.py -> /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/share/task_2/launch
+[0.818s] running install_egg_info
+[0.820s] Copying ../build/task_2/task_2.egg-info to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages/task_2-0.0.0-py3.10.egg-info
+[0.820s] running install_scripts
+[0.841s] Installing client script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.841s] Installing listener script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.841s] Installing service script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.842s] Installing talker script to /home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/task_2
+[0.842s] writing list of installed files to '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/install.log'
+[0.861s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2' returned '0': AMENT_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2/lib/python3.10/site-packages:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_2 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/build install --record /home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2/install.log --single-version-externally-managed install_data

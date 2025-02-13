@@ -16,6 +16,9 @@ class MinimalPublisher(Node):
     def timer_callback(self):
         msg = JointData()                                                # CHANGE
         msg.vel = float(self.i)                                           # CHANGE
+        msg.center.x = float(self.i)
+        msg.center.y = float(self.i)
+        msg.center.z = float(self.i)
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%d"' % msg.vel)       # CHANGE
         self.i += 1

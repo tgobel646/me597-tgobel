@@ -29,7 +29,7 @@ def main():
     rclpy.spin_until_future_complete(minimal_client, future)
     response = future.result()
     minimal_client.get_logger().info(
-        'Result of joint_service: for validity %d, %d, %d, is %d.' %
+        'Result of joint_service: for validity %d, %d, %d, is %s.' %
         (int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]), response.valid))
 
     minimal_client.destroy_node()

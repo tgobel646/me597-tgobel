@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000429] (-) JobUnselected: {'identifier': 'task_1'}
+[0.000465] (-) JobUnselected: {'identifier': 'task_2_interfaces'}
+[0.000486] (task_2) JobQueued: {'identifier': 'task_2', 'dependencies': OrderedDict([('task_2_interfaces', '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces')])}
+[0.000511] (task_2) JobStarted: {'identifier': 'task_2'}
+[0.007186] (task_2) JobEnded: {'identifier': 'task_2', 'rc': 1}
+[0.019557] (-) EventReactorShutdown: {}

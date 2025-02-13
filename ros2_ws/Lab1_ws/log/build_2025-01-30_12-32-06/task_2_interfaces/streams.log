@@ -1,0 +1,64 @@
+[0.015s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/home/me597/me597-tgobel/ros2_ws/sim_ws/install/sim_utils:/opt/ros/humble /usr/bin/cmake /home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2_interfaces -DCMAKE_INSTALL_PREFIX=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.118s] -- The CXX compiler identification is GNU 11.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.197s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.197s] -- Detecting C compile features
+[0.198s] -- Detecting C compile features - done
+[0.201s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.289s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.290s] -- Detecting CXX compile features
+[0.290s] -- Detecting CXX compile features - done
+[0.292s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.477s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.578s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.667s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.724s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.732s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.748s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.767s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.790s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.857s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.093s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.493s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.637s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.660s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.663s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.689s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.689s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.690s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.690s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.709s] -- Found PythonExtra: .so  
+[1.766s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.826s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.831s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.924s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.949s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.986s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.998s] -- Looking for pthread.h
+[2.069s] -- Looking for pthread.h - found
+[2.069s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.136s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.136s] -- Found Threads: TRUE  
+[2.204s] [31mCMake Error at CMakeLists.txt:37 (find_package):
+[2.204s]   By not providing "Findtask_2_interfaces.cmake" in CMAKE_MODULE_PATH this
+[2.204s]   project has asked CMake to find a package configuration file provided by
+[2.204s]   "task_2_interfaces", but CMake did not find one.
+[2.205s] 
+[2.205s]   Could not find a package configuration file provided by "task_2_interfaces"
+[2.205s]   with any of the following names:
+[2.205s] 
+[2.205s]     task_2_interfacesConfig.cmake
+[2.205s]     task_2_interfaces-config.cmake
+[2.205s] 
+[2.205s]   Add the installation prefix of "task_2_interfaces" to CMAKE_PREFIX_PATH or
+[2.205s]   set "task_2_interfaces_DIR" to a directory containing one of the above
+[2.205s]   files.  If "task_2_interfaces" provides a separate development package or
+[2.205s]   SDK, be sure it has been installed.
+[2.205s] 
+[2.205s] [0m
+[2.205s] -- Configuring incomplete, errors occurred!
+[2.205s] See also "/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces/CMakeFiles/CMakeOutput.log".
+[2.216s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_1:/home/me597/me597-tgobel/ros2_ws/sim_ws/install/sim_utils:/opt/ros/humble /usr/bin/cmake /home/me597/me597-tgobel/ros2_ws/Lab1_ws/task_2_interfaces -DCMAKE_INSTALL_PREFIX=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces

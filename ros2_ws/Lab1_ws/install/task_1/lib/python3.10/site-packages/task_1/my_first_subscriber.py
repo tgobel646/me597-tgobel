@@ -7,10 +7,10 @@ from std_msgs.msg import Float64
 class MinimalSubscriber(Node):
 
     def __init__(self):
-        super().__init__('minimal_subscriber')
+        super().__init__('listener')
         self.subscription = self.create_subscription(
             Float64,
-            'my_first_subscriber',
+            'my_first_topic',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning

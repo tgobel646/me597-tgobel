@@ -1,0 +1,3 @@
+[console_scripts]
+gen_sync_map_launch = task_4.gen_sync_map_launch:main
+

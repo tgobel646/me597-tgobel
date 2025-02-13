@@ -289,7 +289,7 @@ SITE:STRING=me597
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //Path to a file.
 _numpy_h:FILEPATH=/usr/include/python3.10/numpy/numpyconfig.h
@@ -532,7 +532,7 @@ std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 task_2_interfaces_BINARY_DIR:STATIC=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/build/task_2_interfaces
 
 //The directory containing a CMake configuration file for task_2_interfaces.
-task_2_interfaces_DIR:PATH=/home/me597/me597-tgobel/ros2_ws/Lab1_ws/install/task_2_interfaces/share/task_2_interfaces/cmake
+task_2_interfaces_DIR:PATH=task_2_interfaces_DIR-NOTFOUND
 
 //Value Computed by CMake
 task_2_interfaces_IS_TOP_LEVEL:STATIC=ON
