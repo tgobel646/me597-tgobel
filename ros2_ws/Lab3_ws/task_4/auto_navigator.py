@@ -5,16 +5,15 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
-from PIL import Image, ImageOps
-
 import yaml
 import pandas as pd
-
 import time
 
 import rclpy
+
+from PIL import Image, ImageOps
 from copy import copy, deepcopy
-from rclpy.node import Node
+from rclpy import Node 
 from nav_msgs.msg import Path
 from geometry_msgs.msg import PoseStamped, PoseWithCovarianceStamped, Pose, Twist
 from std_msgs.msg import Float32
@@ -62,8 +61,6 @@ class Map():
                 else:
                     img_array[i,j] = 0
         return img_array
-print(Map('classroom_map'))
-
 class Queue():
     def __init__(self, init_queue = []):
         self.queue = copy(init_queue)
@@ -110,7 +107,6 @@ class Queue():
         p = self.queue.pop(self.start)
         self.end = len(self.queue)-1
         return p
-    
 class Node():
     def __init__(self,name):
         self.name = name
@@ -219,6 +215,118 @@ class AStar():
             path.append(u)
         path.reverse()
         return path,dist
+class MapProcessor():
+    def __init__(self,name):
+        self.map = Map(name)
+        self.inf_map_img_array = np.zeros(self.map.image_array.shape)
+        self.map_graph = Tree(name)
+
+    def __modify_map_pixel(self,map_array,i,j,value,absolute):
+        if( (i >= 0) and
+            (i < map_array.shape[0]) and
+            (j >= 0) and
+            (j < map_array.shape[1]) ):
+            if absolute:
+                map_array[i][j] = value
+            else:
+                map_array[i][j] += value
+
+    def __inflate_obstacle(self,kernel,map_array,i,j,absolute):
+        dx = int(kernel.shape[0]//2)
+        dy = int(kernel.shape[1]//2)
+        if (dx == 0) and (dy == 0):
+            self.__modify_map_pixel(map_array,i,j,kernel[0][0],absolute)
+        else:
+            for k in range(i-dx,i+dx):
+                for l in range(j-dy,j+dy):
+                    self.__modify_map_pixel(map_array,k,l,kernel[k-i+dx][l-j+dy],absolute)
+
+    def inflate_map(self,kernel,absolute=True):
+        # Perform an operation like dilation, such that the small wall found during the mapping process
+        # are increased in size, thus forcing a safer path.
+        self.inf_map_img_array = np.zeros(self.map.image_array.shape)
+        for i in range(self.map.image_array.shape[0]):
+            for j in range(self.map.image_array.shape[1]):
+                if self.map.image_array[i][j] == 0:
+                    self.__inflate_obstacle(kernel,self.inf_map_img_array,i,j,absolute)
+        r = np.max(self.inf_map_img_array)-np.min(self.inf_map_img_array)
+        if r == 0:
+            r = 1
+        self.inf_map_img_array = (self.inf_map_img_array - np.min(self.inf_map_img_array))/r
+
+    def get_graph_from_map(self):
+        # Create the nodes that will be part of the graph, considering only valid nodes or the free space
+        for i in range(self.map.image_array.shape[0]):
+            for j in range(self.map.image_array.shape[1]):
+                if self.inf_map_img_array[i][j] == 0:
+                    node = Node('%d,%d'%(i,j))
+                    self.map_graph.add_node(node)
+        # Connect the nodes through edges
+        for i in range(self.map.image_array.shape[0]):
+            for j in range(self.map.image_array.shape[1]):
+                if self.inf_map_img_array[i][j] == 0:
+                    if (i > 0):
+                        if self.inf_map_img_array[i-1][j] == 0:
+                            # add an edge up
+                            child_up = self.map_graph.g['%d,%d'%(i-1,j)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_up],[1])
+                    if (i < (self.map.image_array.shape[0] - 1)):
+                        if self.inf_map_img_array[i+1][j] == 0:
+                            # add an edge down
+                            child_dw = self.map_graph.g['%d,%d'%(i+1,j)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_dw],[1])
+                    if (j > 0):
+                        if self.inf_map_img_array[i][j-1] == 0:
+                            # add an edge to the left
+                            child_lf = self.map_graph.g['%d,%d'%(i,j-1)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_lf],[1])
+                    if (j < (self.map.image_array.shape[1] - 1)):
+                        if self.inf_map_img_array[i][j+1] == 0:
+                            # add an edge to the right
+                            child_rg = self.map_graph.g['%d,%d'%(i,j+1)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_rg],[1])
+                    if ((i > 0) and (j > 0)):
+                        if self.inf_map_img_array[i-1][j-1] == 0:
+                            # add an edge up-left
+                            child_up_lf = self.map_graph.g['%d,%d'%(i-1,j-1)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_up_lf],[np.sqrt(2)])
+                    if ((i > 0) and (j < (self.map.image_array.shape[1] - 1))):
+                        if self.inf_map_img_array[i-1][j+1] == 0:
+                            # add an edge up-right
+                            child_up_rg = self.map_graph.g['%d,%d'%(i-1,j+1)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_up_rg],[np.sqrt(2)])
+                    if ((i < (self.map.image_array.shape[0] - 1)) and (j > 0)):
+                        if self.inf_map_img_array[i+1][j-1] == 0:
+                            # add an edge down-left
+                            child_dw_lf = self.map_graph.g['%d,%d'%(i+1,j-1)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_dw_lf],[np.sqrt(2)])
+                    if ((i < (self.map.image_array.shape[0] - 1)) and (j < (self.map.image_array.shape[1] - 1))):
+                        if self.inf_map_img_array[i+1][j+1] == 0:
+                            # add an edge down-right
+                            child_dw_rg = self.map_graph.g['%d,%d'%(i+1,j+1)]
+                            self.map_graph.g['%d,%d'%(i,j)].add_children([child_dw_rg],[np.sqrt(2)])
+
+    def gaussian_kernel(self, size, sigma=1):
+        size = int(size) // 2
+        x, y = np.mgrid[-size:size+1, -size:size+1]
+        normal = 1 / (2.0 * np.pi * sigma**2)
+        g =  np.exp(-((x**2 + y**2) / (2.0*sigma**2))) * normal
+        r = np.max(g)-np.min(g)
+        sm = (g - np.min(g))*1/r
+        return sm
+
+    def rect_kernel(self, size, value):
+        m = np.ones(shape=(size,size))
+        return m
+
+    def draw_path(self,path):
+        path_tuple_list = []
+        path_array = copy(self.inf_map_img_array)
+        for idx in path:
+            tup = tuple(map(int, idx.split(',')))
+            path_tuple_list.append(tup)
+            path_array[tup] = 0.5
+        return path_array
 
 class Navigation(Node):
     """! Navigation node class.
@@ -282,11 +390,15 @@ class Navigation(Node):
         path.poses.append(start_pose)
         path.poses.append(end_pose)
 
+        mp = MapProcessor('Lab3_ws/task_4/maps/classroom_map')
+        
+        astar = AStar()
+        astar.in_tree = mp
+
         # Do not edit below (required for autograder)
         self.calc_time_pub.publish(self.get_clock().now().nanoseconds*1e-9-self.start_time)
         
         return path
-        print(f"Path is: {path}")
 
     def get_path_idx(self, path, vehicle_pose):
         """! Path follower.
