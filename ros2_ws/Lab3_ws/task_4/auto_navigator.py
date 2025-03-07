@@ -386,17 +386,34 @@ class Navigation(Node):
         self.get_logger().info(
             'A* planner.\n> start: {},\n> end: {}'.format(start_pose.pose.position, end_pose.pose.position))
         self.start_time = self.get_clock().now().nanoseconds*1e-9 #Do not edit this line (required for autograder)
+
         # TODO: IMPLEMENTATION OF THE A* ALGORITHM
         path.poses.append(start_pose)
         path.poses.append(end_pose)
 
+        print(Map('classroom_map'))
+
         mp = MapProcessor('Lab3_ws/task_4/maps/classroom_map')
-        
-        astar = AStar()
-        astar.in_tree = mp
+
+        kr = mp.rect_kernel(5,1)
+        #kr = mp.rect_kernel(1,1)
+        mp.inflate_map(kr,True)
+
+        mp.get_graph_from_map()
+
+        mp.map_graph.root = start_pose[0],start_pose[1]
+        mp.map_graph.end = end_pose[0],end_pose[1]
+
+        as_maze = AStar(mp.map_graph)
+
+        as_maze.solve(mp.map_graph.g[mp.map_graph.root],mp.map_graph.g[mp.map_graph.end])
+
+        path,dist = as_maze.reconstruct_path(mp.map_graph.g[mp.map_graph.root],mp.map_graph.g[mp.map_graph.end])
 
         # Do not edit below (required for autograder)
-        self.calc_time_pub.publish(self.get_clock().now().nanoseconds*1e-9-self.start_time)
+        self.astarTime = Float32()
+        self.astarTime.data = float(self.get_clock().now().nanoseconds*1e-9-self.start_time)
+        self.calc_time_pub.publish(self.astarTime)
         
         return path
 
@@ -418,6 +435,7 @@ class Navigation(Node):
 
             point_x = path[idx][0]
             point_y = path[idx][1]
+
             dist = np.sqrt((vehicle_x - point_x) ** 2 + (vehicle_y - point_y) ** 2)
             
             if dist < min_dist:
@@ -435,9 +453,9 @@ class Navigation(Node):
         heading = 0.0
         # TODO: IMPLEMENT PATH FOLLOWER
         # Extract vehicle position and orientation from vehicle_pose
-        vehicle_x = vehicle_pose.position.x
-        vehicle_y = vehicle_pose.position.y
-        vehicle_theta = vehicle_pose.orientation.z # Assuming 2D and theta represents yaw angle
+        vehicle_x = vehicle_pose.pose.position.x
+        vehicle_y = vehicle_pose.pose.position.y
+        vehicle_theta = np.atan2()
 
         # Extract goal position from current_goal_pose
         goal_x = current_goal_pose[0][0]
