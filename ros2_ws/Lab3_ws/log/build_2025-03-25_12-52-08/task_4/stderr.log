@@ -1,0 +1,5 @@
+  File "/home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/python3.10/site-packages/task_4/auto_navigator.py", line 347
+    ax.scatter(start[0], start[1], 'go', s = 100 label='Start')
+                                             ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

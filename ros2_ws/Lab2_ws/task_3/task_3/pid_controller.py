@@ -5,7 +5,6 @@ from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Float32
 import time
-from rclpy.qos import QoSProfile, QoSHistoryPolicy, QoSReliabilityPolicy
 
 class PIDController(Node):
     def __init__(self):

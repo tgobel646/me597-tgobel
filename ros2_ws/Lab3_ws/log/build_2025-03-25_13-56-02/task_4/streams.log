@@ -1,0 +1,25 @@
+[0.503s] Invoking command in '/home/me597/me597-tgobel/ros2_ws/Lab3_ws/task_4': PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_4 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/build install --record /home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/install.log --single-version-externally-managed install_data
+[0.704s] running egg_info
+[0.705s] writing ../build/task_4/task_4.egg-info/PKG-INFO
+[0.705s] writing dependency_links to ../build/task_4/task_4.egg-info/dependency_links.txt
+[0.707s] writing entry points to ../build/task_4/task_4.egg-info/entry_points.txt
+[0.707s] writing requirements to ../build/task_4/task_4.egg-info/requires.txt
+[0.707s] writing top-level names to ../build/task_4/task_4.egg-info/top_level.txt
+[0.708s] reading manifest file '../build/task_4/task_4.egg-info/SOURCES.txt'
+[0.709s] writing manifest file '../build/task_4/task_4.egg-info/SOURCES.txt'
+[0.709s] running build
+[0.709s] running build_py
+[0.710s] copying task_4/auto_navigator.py -> /home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/build/lib/task_4
+[0.710s] running install
+[0.711s] running install_lib
+[0.711s] copying /home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/build/lib/task_4/auto_navigator.py -> /home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/python3.10/site-packages/task_4
+[0.712s] byte-compiling /home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/python3.10/site-packages/task_4/auto_navigator.py to auto_navigator.cpython-310.pyc
+[0.714s] running install_data
+[0.714s] running install_egg_info
+[0.716s] removing '/home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/python3.10/site-packages/task_4-0.0.0-py3.10.egg-info' (and everything under it)
+[0.716s] Copying ../build/task_4/task_4.egg-info to /home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/python3.10/site-packages/task_4-0.0.0-py3.10.egg-info
+[0.718s] running install_scripts
+[0.735s] Installing auto_navigator script to /home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/task_4
+[0.735s] Installing gen_sync_map_launch script to /home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/task_4
+[0.735s] writing list of installed files to '/home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/install.log'
+[0.756s] Invoked command in '/home/me597/me597-tgobel/ros2_ws/Lab3_ws/task_4' returned '0': PYTHONPATH=/home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597-tgobel/ros2_ws/Lab3_ws/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_4 build --build-base /home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/build install --record /home/me597/me597-tgobel/ros2_ws/Lab3_ws/build/task_4/install.log --single-version-externally-managed install_data
