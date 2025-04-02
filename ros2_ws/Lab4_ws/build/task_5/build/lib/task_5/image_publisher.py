@@ -15,13 +15,13 @@ class ImagePublisher(Node):
         # rest of init code:
         self.image_pub = self.create_publisher(Image, '/video_data', 10)
 
-    cap = cv.VideoCapture('home/me597-tgobel/me597-tgobel/ros2_ws/Lab4_ws/task_5/resource/lab3_video.avi')
+    cap = cv.VideoCapture('/home/me597/me597-tgobel/me597-tgobel/ros2_ws/Lab4_ws/task_5/resource/lab3_video.avi')
     frame_width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH))
     frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
     # Define the codec and create VideoWriter object
     fourcc = cv.VideoWriter_fourcc(*'XVID')
-    out = cv.VideoWriter('output.avi', fourcc, 20.0, (frame_width, frame_height), True)
+    out = cv.VideoWriter('/home/me597/me597-tgobel/me597-tgobel/ros2_ws/Lab4_ws/task_5/resource/output.avi', fourcc, 20.0, (frame_width, frame_height), True)
 
     def some_looping_or_callback_function(self, cap, gray):
         ret, frame = cap.read()
@@ -45,7 +45,7 @@ def main(args=None):
     img = ImagePublisher()
 
     try:
-        img.run()
+        rclpy.spin(img)
     except KeyboardInterrupt:
         pass
     finally:

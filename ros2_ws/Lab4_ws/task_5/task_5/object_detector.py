@@ -38,6 +38,7 @@ class ObjectDetector(Node):
 
         # Find contours in the binary image
         contours, _ = cv2.findContours(thresholded, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        self.get_logger().info(f"Contours is: {contours}")
 
         if contours:
             # Find the largest contour (assumed to be the object of interest)
@@ -71,7 +72,7 @@ class ObjectDetector(Node):
 
             # Display the image with the bounding box
             cv2.imshow("Object Detection", cv_image)
-            cv2.waitKey(1)
+            cv2.waitKey(10)
 
 def main(args=None):
     rclpy.init(args=args)
